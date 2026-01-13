@@ -1,0 +1,33 @@
+OWASP Juice Shop - Cybersecurity Training (Week 1)
+
+Project Overview:
+This repository documents my first week of hands-on experience in web application security and penetration testing. 
+Using the OWASP Juice Shop—a deliberately insecure web application—I explored how to set up a local testing environment and identify common web vulnerabilities.
+
+Tasks Completed
+1. Environment Setup:
+Installed and configured the application locally using Node.js.
+
+Successfully compiled the frontend and backend services, resolving initial dependencies.
+
+Launched the application on http://localhost:3000.
+
+2. Manual Vulnerability Testing:
+I successfully performed several manual attacks to understand how hackers exploit poor coding practices:
+
+Error Handling: Triggered non-graceful system errors to leak technical information.
+
+Cross-Site Scripting (XSS): Injected malicious scripts into input fields (e.g., Email/Search).
+
+SQL Injection (SQLi): Attempted to bypass authentication using logic-based payloads like ' OR '1'='1.
+
+3. Automated Scanning with OWASP ZAP
+Integrated ZAP (Zed Attack Proxy) to perform automated security audits.
+
+Learning Progress: Although the scan encountered some "400 Bad Request" errors and did not reach 100% completion, 
+I gained a solid understanding of how automated tools crawl sites and identify security holes at scale.
+
+Key Learnings
+This first week provided a deep dive into the SDLC (Software Development Life Cycle) from a security perspective. 
+I learned that even during the "build" phase, many third-party packages can introduce critical vulnerabilities. 
+I now have a foundational understanding of both manual "hunting" for bugs and using professional tools like ZAP for automated discovery.
